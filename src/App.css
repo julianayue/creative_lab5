@@ -1,0 +1,168 @@
+.Header {
+  background-color: #fefbe9;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  height: 85px;
+}
+
+.CoverImage img {
+  object-fit: cover;
+  height: 200px;
+  margin-right: 35px;
+  margin-left: 25px;
+  width: 250px;
+  border: double;
+  border-width: medium;
+  border-color: #183a1d;
+}
+
+.RecipeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 300px;
+}
+
+.RecipeListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+  justify-content: space-evenly;
+  background-color: #e1eedd;
+  padding-top: 30px;
+}
+
+.RecipeName {
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  margin: 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Geneva;
+}
+
+.RecipeImage img {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+}
+
+.IngredientsText {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: Geneva;
+  background-color: #f6c453;
+}
+
+.SeeNewTab {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: Geneva;
+  background-color: #183a1d;
+}
+
+.SeeMoreText {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: Geneva;
+  background-color: #183a1d;
+}
+
+.AppName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.AppName h4 {
+  padding-top: 24px;
+  font-family: Rockwell, fantasy;
+  font-weight: bolder;
+  color: #183a1d;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Placeholder  {
+  display: flex;
+  margin: 180px;
+  margin-bottom: 300px;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 120px;
+  justify-content: space-evenly;
+}
+
+.SearchBox {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  border-radius: 6px;
+  margin-left: 20px;
+  width: 50%;
+  background-color: white;
+  border: solid;
+  border-color: #f0a04b;
+  border-width: thick;
+  height: 45px;
+}
+
+.SearchIcon img {
+  width: 44px;
+  height: 44px;
+}
+
+.SearchInput {
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-left: 15px;
+  font-family: Geneva;
+  padding: 13px;
+}
+
+.item{
+  width:200px;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+}
+
+.Placeholder h2 {
+    font-family: Geneva;
+}
