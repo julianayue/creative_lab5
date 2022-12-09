@@ -6,15 +6,15 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions";
 
-const APP_ID = "a52b4d43";
-const APP_KEY = "e0e5c667605f5e91d8275c973531b80a";
+const APP_ID = "d8bcf957";
+const APP_KEY = "1d4e6c3c26b94f458b9e608b477945dc";
 
 const RecipeComponent = (props) => {
   const [show, setShow] = useState("");
 
   const { label, image, ingredients, url } = props.recipe;
   return (
-    <div className="RecipeContainer">
+    <div className="IngredientsContainer">
       <Dialog
         onClose={() => console.log("Container Closed")}
         aria-labelledby="simple-dialog-title"
@@ -40,12 +40,12 @@ const RecipeComponent = (props) => {
           </table>
         </DialogContent>
         <DialogActions>
-          <div className="SeeNewTab" onClick={() => window.open(url)}>See More</div>
+          <div className="SeeNewTab" onClick={() => window.open(url)}>See Instructions</div>
           <div className="SeeMoreText" onClick={() => setShow("")}>Close</div>
         </DialogActions>
       </Dialog>
       <div className="RecipeName">{label}</div>
-      <div className="CoverImage"><img src={image} alt={label}/></div> 
+      <div className="ItemImage"><img src={image} alt={label}/></div> 
       <div className="IngredientsText" onClick={() => setShow(!show)}>
         INGREDIENTS
       </div>
@@ -78,7 +78,7 @@ function AppComponent() {
   return (
     <div className="Container">
       <div className="Header">
-        <div className="AppName">
+        <div className="AppLogo">
         <div className="RecipeImage"><img src="./images/pineapple.svg" alt=""/></div>
           <h4>Recipes Land</h4>
         </div>
@@ -91,7 +91,7 @@ function AppComponent() {
           />
         </div>
       </div>
-      <div className="RecipeListContainer">
+      <div className="RecipeItemContainer">
         {recipeList?.length ? (
           recipeList.map((recipe, index) => (
             <RecipeComponent key={index} recipe={recipe.recipe} />
@@ -113,6 +113,11 @@ function AppComponent() {
           </div>
         )}
       </div>
+      <div className= 'footer'>
+          <a href="https://github.com/julianayue/creative_lab5">Link to Github Repository</a>
+          <br/>
+          <h6>Site by Juliana Yue and Claire Chen</h6>
+        </div>
     </div>
   );
 };
